@@ -25,9 +25,9 @@ html {
 
 .menu a {
   position: relative;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 16px;
-  color: #1a192e;
+  color: #313847;
   text-decoration: none;
 }
 
@@ -39,7 +39,7 @@ html {
   height: 2px;
   top: 100%;
   left: 0;
-  background: #1a192e;
+  background: #313847;
   transition: transform 0.5s;
   transform: scaleX(0);
   transform-origin: left;
@@ -65,7 +65,7 @@ html {
 
   h1 {
     text-align: left;
-    margin: auto;
+    margin-top: 0;
   }
 
   p {
@@ -75,98 +75,110 @@ html {
   }
 }
 
-/*TIMELINE*/
-.container{
-  color: #1a192e;
-  max-width: 1224px;
-	height: 100%;
-	text-align: left;
-	margin: 0 auto;
-	padding: 2em;
-	position: relative;
+
+/* (A) "SET" THE TIMELINE CONTAINER */
+.altTL, div.altEV { box-sizing: border-box; }
+.altTL {
+  /* (A1) RELATIVE POSITION IS NECESSARY... */
+  position: relative;
+  /* (A2) WIDTH RESTRICTION & CENTER ON PAGE */
+  max-width: 620px;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
-.main-title{
-	color: #1a192e;
-	font-size: 1.5em;
-	margin-bottom: .3em;
-  font-family: Montserrat;
+/* (B) USE ::BEFORE TO DRAW VERTICAL TIMELINE */
+.altTL::before {
+  /* (B1) DRAW THE VERTICAL TIMELIME */
+  content: '';
+  width: 3px;
+  background-color: #595870;
+  /* (B2) SET IN MIDDLE OF CONTAINER */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
 }
 
- .timeline {
-	  position: relative;
-	  width: auto;
-	  margin: 0 auto;
-	  margin-top: 5em;
-    padding-bottom: 2em;
-    padding-left: 0;
-	}
+/* (C) STYLES FOR EVENTS */
+div.altEV {
+  position: relative;
+  left: 0; /* DEFAULT TO LEFT, USE .RIGHT BELOW TO PLACE EVENT ON THE RIGHT */
+  padding: 20px 30px;
+  width: 45%;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+div.right { left: 55%; }
 
-/*VERTICAL LINE*/
-	.timeline:before {
-	  position: absolute;
-	  left: 30%;
-	  top: 0;
-	  content: ' ';
-	  display: block;
-	  width: 4px;
-	  height: 100%;
-	  margin-left: 0;
-	  background: #cfb1f0;
-	  z-index: 5;
-	}
-
-
-	.dir-l, .dir-r{
-		position: relative;
-		width: 60%;
-		margin-top: 0;
-		margin-bottom: 1.5em;
-	}
-
-.timeline p{
+/* (D) STYLES FOR THE DATE & TEXT */
+strong.edate {
+  font-family: "Montserrat";
+  font-size: 1.1em;
+  color: #313847;
+}
+p.etxt {
+  font-family: "Source Sans pro";
   font-size: 1.2em;
-  line-height: 1.5em;
-  font-family: Source Sans Pro;
+  margin: 10px 0 0 0;
+  color: #222;
 }
 
-.timeline-icon{
-	position: absolute;
-	width: 0.1em;
-	height: 0.1em;
-	right: 10;
-	border-radius: 50%;
-	z-index: 5;
+/* (E) ADD "SPEECH BUBBLE TRIANGLE" TO THE EVENTS */
+div.altEV::before {
+  content: '';
+  border: 10px solid transparent;
+  border-left-color: #f2f2f2;
+  border-right: 0;
+  position: absolute;
+  left: 100%;
+  top: 30%;
+}
+div.altEV.right::before {
+  content: '';
+  border: 10px solid transparent;
+  border-right-color: #f2f2f2;
+  border-left: 0;
+  position: absolute;
+  left: auto;
+  right: 100%;
+  top: 30%;
 }
 
-.timeline a{
-	color: #38666a;
-	margin-left: .3em;
+/* (F) ADD A CIRCLE ON THE TIMELINE TO INDICATE AN EVENT */
+div.altEV::after {
+  content: '';
+  background: #595870;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 109%;
 }
-
-	.dir-r{ float: right; }
-
-/* PURPLE DOTS*/
-	.timeline-icon{
-		position: absolute;
-		top: -.2em;
-		width: 20px;
-		height: 20px;
-    margin-left: 28.5%;
-	}
-
-	.timeline-blocks{
-		display: block;
-		height: auto;
-		padding: 1em 0;
-		position: relative;
-		overflow: hidden;
-	}
-
-	.timeline-blocks .date-l, .timeline-blocks .date-r{
-		position: absolute;
-		top: 1em;
-		right: 85%;
-		font-size: 1em;
-    font-family: Montserrat
-	}
+div.altEV.right::after {
+  content: '';
+  background: #595870;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: auto;
+  right: 107%;
+}
+/*VIDEO*/
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
