@@ -207,15 +207,21 @@ table {
 }
 
 th {
-  width: 100px;
+  width: 50px;
   text-align: left;
   border: 0px solid black;
   padding: 5px;
 }
 
 td {
-  width: 200px;
+  width: 400px;
   text-align: left;
   border: 0px solid black;
   padding: 5px;
+}
+
+.aka
+{
+    color: #ababab;
+    font-size: 3.5vh;
 }
