@@ -30,7 +30,9 @@
     <div class="box">
         <br><h1 style="font-family:Montserrat; font-size:2.5vw; color:#313847;"><br>Building the Foundation</h1><br>
           <p style="font-family:Source Sans Pro; font-size:1.5vw; color:#222;">
-            The last part of BTS’ “school trilogy”, <i>Skool Luv Affair</i> was released in January and topped the Gaon Album chart selling 100,000 copies that year. It was also the first time BTS appeared on the Billboard’s World Albums Chart, peaking at number three. Although it was musically similar to their first two albums, the theme shifted to young love in order to grow with their fanbase. That July, the band members took to Hollywood Boulevard to hand out 200 flyers for their free and first US concert and in August, they released their debut studio album <i>Dark & Wild</i> which peaked at number 3 on the weekly Billboard World Albums chart. Fun fact! The lead single “Danger” was recorded in a Los Angeles garage.
+            The last part of BTS’ “school trilogy”, <i>Skool Luv Affair</i> was released in January and topped the Gaon Album chart selling 100,000 copies that year. It was also the first time BTS appeared on the Billboard’s World Albums Chart peaking at number three. Although it was musically similar to their first two albums, it’s main theme shifted to young love in order to grow with their fanbase. That July, the band members took to Hollywood Boulevard to hand out 200 flyers for their free and first US concert and in August, they released their debut studio album <i>Dark & Wild</i> which peaked at number three on the weekly Billboard World Albums chart. Oh and fun fact! The lead single “Danger” was recorded in a Los Angeles garage.
+            <br><br>
+            BTS continued to build their small but loyal fanbase on social media. Before they amassed the following they have today, the boys frequently enjoyed banter with their fans on Twitter. They also had no shame in @ing brands to send them free stuff which is funny to think about now that they’re millionaires. Fans could enjoy a break with Bangtan Bombs; brief vlogs, backstage footage or dance practices uploaded to their Youtube channel, BANGTANTV. The informality and seemingly unfiltered version of the members seen in these videos served to benefit them. It made them feel less like faraway celebrities and more like friends.
           </p>
         <br><br>
       <div class="photo">
@@ -97,6 +99,27 @@
           <th style="font-family:Source Sans Pro; font-size:1.5vw; color:#313847; width:10em">About</th>
           <td style="font-family:Source Sans Pro; font-size:1.5vw; color:#222;">The second of the “School Trilogy” project that discusses topics teens their age are most interested in such as dreams, happiness and love.</td>
        </tr>
+       <tr><th></th>
+           <td>
+             <audio id="bAudio">
+             <source src="mp3/luvaffair.mp3" type="audio/mp3">
+             </audio>
+             <button onclick="playbAudio()" type="button">Play</button>
+             <button onclick="pausebAudio()" type="button">Pause</button>
+
+             <script>
+             var b = document.getElementById("bAudio");
+
+             function playbAudio() {
+               b.play();
+             }
+
+             function pausebAudio() {
+               b.pause();
+             }
+             </script>
+           </td>
+         </tr>
     </table>
   </div>
   <!--ALBUM TABLE 2-->
@@ -118,6 +141,27 @@
           <th style="font-family:Source Sans Pro; font-size:1.5vw; color:#313847; width:10em">About</th>
           <td style="font-family:Source Sans Pro; font-size:1.5vw; color:#222;">BTS sings about love gone awry and the many conflicting emotions of young love.
           </td>
+          <tr><th></th>
+              <td>
+                <audio id="cAudio">
+                <source src="mp3/darkwild.mp3" type="audio/mp3">
+                </audio>
+                <button onclick="playcAudio()" type="button">Play</button>
+                <button onclick="pausecAudio()" type="button">Pause</button>
+
+                <script>
+                var c = document.getElementById("cAudio");
+
+                function playcAudio() {
+                  c.play();
+                }
+
+                function pausecAudio() {
+                  c.pause();
+                }
+                </script>
+              </td>
+            </tr>
        </tr>
     </table>
   </div>
