@@ -225,3 +225,7 @@ td {
     color: #ababab;
     font-size: 3.5vh;
 }
+
+figure {
+    margin: 0;
+}
