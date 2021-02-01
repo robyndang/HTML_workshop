@@ -4,6 +4,7 @@ html {
   margin: 0%!important;
   box-sizing: border-box;
   background: #f5f5f5;
+  line-height: 2em; 
 }
 
 /*NAVIGATION MENU*/
