@@ -227,3 +227,7 @@ td {
 figure {
     margin: 0;
 }
+
+.album-container {
+  overflow-x: scroll;
+}
