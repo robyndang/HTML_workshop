@@ -53,14 +53,15 @@ html {
 .menu a:hover::after {
   transform: scaleX(1);
 }
-
+.banner {
+    line-height: 2em;
+}
 /*FITS BANNER TO VIEWPORT*/
 .banner img {
   max-width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
-  line-height: 2em;
 }
 
 /*CONTAINS ELEMENTS IN CENTER*/
