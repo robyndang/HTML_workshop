@@ -4,7 +4,6 @@ html {
   margin: 0%!important;
   box-sizing: border-box;
   background: #f5f5f5;
-  line-height: 2em; 
 }
 
 /*NAVIGATION MENU*/
@@ -70,6 +69,7 @@ html {
   border: 0em solid black;
   margin: 0em auto;
   positon: relative;
+  line-height: 2em;
 
   h1 {
     text-align: left;
@@ -124,12 +124,14 @@ strong.edate {
   font-family: "Montserrat";
   font-size: 1.3em;
   color: #313847;
+  line-height: 1.7em;
 }
 p.etxt {
   font-family: "Source Sans pro";
   font-size: 1.2em;
   margin: 10px 0 0 0;
   color: #222;
+  line-height: 1.7em;
 }
 
 /* (E) ADD "SPEECH BUBBLE TRIANGLE" TO THE EVENTS */
@@ -195,6 +197,7 @@ div.altEV.right::after {
 .album-container {
   display: flex;
   margin: 5%;
+  line-height: 2em;
 }
 
 .album {
