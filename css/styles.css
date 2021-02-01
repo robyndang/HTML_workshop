@@ -31,7 +31,7 @@ html {
 .menu a {
   position: relative;
   font-family: "Montserrat";
-  font-size: 1.2vw;
+  font-size: 1.2em;
   color: #313847;
   text-decoration: none;
 }
@@ -122,12 +122,12 @@ div.right { left: 55%; }
 /* (D) STYLES FOR THE DATE & TEXT */
 strong.edate {
   font-family: "Montserrat";
-  font-size: 1.5vw;
+  font-size: 1.3em;
   color: #313847;
 }
 p.etxt {
   font-family: "Source Sans pro";
-  font-size: 1.5vw;
+  font-size: 1.2em;
   margin: 10px 0 0 0;
   color: #222;
 }
