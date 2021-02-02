@@ -55,7 +55,6 @@ html {
 }
 .banner {
     line-height: 2em;
-    display: flex;
 }
 /*FITS BANNER TO VIEWPORT*/
 .banner img {
@@ -73,7 +72,6 @@ html {
   margin: 0em auto;
   positon: relative;
   line-height: 2em;
-  display: flex;
 
   h1 {
     text-align: left;
@@ -83,7 +81,6 @@ html {
   p {
     text-align: left;
     margin: auto;
-    display: flex;
   }
 }
 
@@ -130,7 +127,6 @@ strong.edate {
   font-size: 1.3em;
   color: #313847;
   line-height: 1.7em;
-  display: flex;
 }
 p.etxt {
   font-family: "Source Sans pro";
@@ -138,7 +134,6 @@ p.etxt {
   margin: 10px 0 0 0;
   color: #222;
   line-height: 1.7em;
-  display: flex;
 }
 
 /* (E) ADD "SPEECH BUBBLE TRIANGLE" TO THE EVENTS */
@@ -150,7 +145,6 @@ div.altEV::before {
   position: absolute;
   left: 100%;
   top: 30%;
-  display: flex;
 }
 div.altEV.right::before {
   content: '';
@@ -161,7 +155,6 @@ div.altEV.right::before {
   left: auto;
   right: 100%;
   top: 30%;
-  display: flex;
 }
 
 /* (F) ADD A CIRCLE ON THE TIMELINE TO INDICATE AN EVENT */
@@ -193,7 +186,6 @@ div.altEV.right::after {
   width: 100%;
   padding-bottom: 56.25%;
   height: 0;
-  display: flex;
 }
 .iframe-container iframe{
   position: absolute;
@@ -201,7 +193,6 @@ div.altEV.right::after {
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
 }
 
 /*ALBUM TABLE*/
@@ -213,13 +204,11 @@ div.altEV.right::after {
 
 .album {
   margin: 20px;
-  display: flex;
 }
 
 table {
   border-collapse: separate;
   border-spacing: 0 15px;
-  display: flex;
 }
 
 th {
@@ -227,7 +216,6 @@ th {
   text-align: left;
   border: 0px solid black;
   padding: 5px;
-  display: flex;
 }
 
 td {
@@ -235,7 +223,6 @@ td {
   text-align: left;
   border: 0px solid black;
   padding: 5px;
-  display: flex;
 }
 
 .aka  {
